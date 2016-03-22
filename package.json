@@ -1,0 +1,20 @@
+{
+  "name": "swmp",
+  "version": "1.0.0",
+  "description": "Store Workload & MPD Productivity",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "npm install",
+    "postinstall": "bower install",    
+    "start": "http-server -a localhost -p 8000 -c-1"
+  },
+  "dependencies": {
+    "bower": "^1.7.7",
+    "http-server": "^0.9.0",
+    "jasmine": "^2.4.1",
+    "karma": "^0.13.22"
+  }
+}

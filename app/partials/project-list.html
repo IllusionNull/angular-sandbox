@@ -1,0 +1,16 @@
+Sort:
+<select ng-model="sortOrder">
+    <option value="name">Project Name</option>
+    <option value="description">Project Description</option>
+</select>
+Search:
+<input ng-model="query" />
+<hr/>
+<ul>
+    <li ng-repeat="project in projects | filter:query | orderBy:sortOrder">
+        <a href="#/projects/{{project.id}}">
+            <span>{{project.name}}</span>
+        </a>
+        <p>{{project.description}}</p>
+    </li>
+</ul>
